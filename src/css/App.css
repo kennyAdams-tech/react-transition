@@ -1,0 +1,99 @@
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+li a{
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+.active{
+  background-color: gray;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-add{
+  background-color: gray;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-remove{
+  background-color: red;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.item{
+  text-align: center;
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+  padding:  5px;
+  margin-top: 5px;
+  opacity: 1;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in;
+}
+
+.item.active,
+.item.enter-active{
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.item.exit, .exit-active {
+  text-align: center;
+  background-color: blue;
+  padding:  5px;
+  margin-top: 5px;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+button {
+  background-color: gray;
+  text-align: center;
+  padding: 10px  15px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.square{
+  background-color: red;
+  height: 100px;
+  color: white;
+  transition: all 2s ease;
+}
+
+.square-entering {
+  background-color: blue;
+  transition: all 2s ease;
+  transform: translateX(0%);
+} 
+
+.square-exiting {
+  background-color: green;
+} 
+
+.square-exited {
+  transform: translateX(-109%);
+} 
